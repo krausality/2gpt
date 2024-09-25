@@ -1,6 +1,7 @@
 from pathlib import Path
 from togpt.togpt import convert_project_folder
 import typer
+import pyperclip
 
 
 app = typer.Typer()
@@ -16,6 +17,7 @@ def main(directory: Path = typer.Argument(..., help='The directory to convert.')
         raise typer.Abort()
 
     output = convert_project_folder(directory)
+    pyperclip.copy(output)
     typer.echo(output)
 
 

@@ -13,7 +13,8 @@ requires-python = ">=3.9"
 keywords = ["GPT", "ChatGPT"]
 dependencies = [
     'typer',
-    'gitignore_parser'
+    'gitignore_parser',
+    'pyperclip'
 ]
 
 [project.scripts]
