@@ -18,7 +18,8 @@ def main(directory: Path = typer.Argument(..., help='The directory to convert.')
 
     output = convert_project_folder(directory)
     pyperclip.copy(output)
-    typer.echo(output)
+    typer.echo("Copied project to clipboard.")
+    #typer.echo(output)
 
 
 if __name__ == '__main__':
