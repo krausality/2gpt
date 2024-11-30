@@ -1,3 +1,5 @@
+#modified for easy clipboard copy
+
 from pathlib import Path
 
 from gitignore_parser import parse_gitignore
