@@ -39,7 +39,7 @@ def get_file_contents(path: Path) -> str:
     '''
     Returns the contents of all Python files in the given directory.
     '''
-    with path.open('r') as file:
+    with path.open('r', encoding='utf-8') as file:
         header = f'# Contents of {path.name}'
         return header + '\n```\n' + file.read() + '\n```\n\n'
 
